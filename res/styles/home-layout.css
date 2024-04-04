@@ -1,0 +1,17 @@
+#tree {
+    width: 1.5rem;
+    display: inline-flex;
+    vertical-align: bottom;
+}
+
+.flex {
+    display: flex;
+    gap: 1rem;
+    align-content: center;
+}
+
+.sub {
+    padding: 0.5rem;
+    display: inline-flex;
+    vertical-align: middle;
+}

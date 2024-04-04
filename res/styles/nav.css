@@ -1,0 +1,37 @@
+nav {
+    flex: 0 0 auto;
+    min-width: 10rem;
+    max-width: 35rem;
+    background-color: var(--page-bg);
+    border-radius: 5px;
+    padding: 0.5em;
+    padding-left: 1em;
+    text-align: start;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    display: flex;
+    flex: 1;
+    border-radius: 3px;
+    padding-right: 0.25em;
+    color: #c4ebd0;
+    transition: background-color 100ms linear;
+}
+
+nav a:hover {
+    background-color: var(--selection);
+}
+
+nav a:link, a:visited, a:link:active, a:visited:active {
+    text-decoration: none;
+}
+
+/*nav::before {
+
+}*/

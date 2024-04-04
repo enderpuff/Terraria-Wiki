@@ -1,0 +1,17 @@
+footer {
+    margin-top: auto;
+    border-radius: 0px 0px 10px 10px;
+    background-image: url("../img/themes/nav-overworld.jpg");
+}
+
+footer a {
+    padding: 0.5em;
+}
+
+footer img {
+    max-width: 64px;
+}
+
+.footertxt {
+    vertical-align: 70%;
+}

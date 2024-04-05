@@ -1,7 +1,6 @@
 nav {
     flex: 0 0 auto;
-    min-width: 10rem;
-    max-width: 35rem;
+    max-width: 95%;
     background-color: var(--page-bg);
     border-radius: 5px;
     padding: 0.5em;

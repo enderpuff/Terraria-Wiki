@@ -6,6 +6,9 @@
 }
 
 #page {
+    margin: 0;
+    padding: 0;
+    width: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -52,7 +55,6 @@ header {
     }
 
     #page {
-        box-sizing: border-box;
         flex-flow: wrap;
     }
 }

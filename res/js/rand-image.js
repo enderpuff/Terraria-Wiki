@@ -1,4 +1,4 @@
-export var theme;
+//export var theme;
 
 window.onload = choosePic;
 
@@ -47,7 +47,7 @@ var theme;
 function choosePic() {
     console.log(extractRootDomain(href));
     var randomNum = Math.floor(Math.random() * pictures[0].length);
-    theme = pictures[0][randomNum];
+    //theme = pictures[0][randomNum];
     //You always miss it the first time, and so I did. But it should work on the second. Or the third. Or the fourth. Or the fifth...
     document.body.style.backgroundImage = 'url("' + extractRootDomain(href) + prefixes[0] + pictures[0][randomNum] + '")';
     document.getElementById("logo").src = extractRootDomain(href) + prefixes[1] + pictures[1][randomNum];

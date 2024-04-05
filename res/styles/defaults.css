@@ -55,11 +55,4 @@ header {
         box-sizing: border-box;
         flex-flow: wrap;
     }
-
-    nav { 
-        margin: 0;
-        width: 100%;
-        height: auto;
-        position: relative;
-    }
 }

@@ -35,3 +35,9 @@ nav a:link, a:visited, a:link:active, a:visited:active {
 /*nav::before {
 
 }*/
+
+@media (max-width: 768px) {
+    nav { 
+        width: 100%;
+    }
+}

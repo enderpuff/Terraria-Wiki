@@ -49,6 +49,11 @@ header {
     flex: 1;
 }
 
+.wrapper-nowrap {
+    flex: 1;
+    flex-flow: row nowrap;
+}
+
 @media (max-width: 768px) {
     header img {
         width: 80%;

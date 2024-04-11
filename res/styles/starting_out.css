@@ -1,3 +1,14 @@
-#aside_img img {
+/*.asidewrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.asidewrap p {
+    flex: 1;
+}*/
+
+.asidewrap img {
+    clear: right;
+    float: right;
     width: 45rem;
 }

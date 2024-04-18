@@ -32,17 +32,21 @@ let extractRootDomain = function(filePath){
 };
 
 const prefixes = ["res/img/backgrounds/", "res/img/logos/", "res/img/themes/"];
-let randomNum, theme;
+let randomNum, theme, foot;
 
 function init() {
+    //foot = document.getElementById("footer");
     randomNum = Math.floor(Math.random() * pictures.length);
     theme = pictures[randomNum];
 }
 
 function choosePic () {
+    
     //You always miss it the first time, and so I did. But it should work on the second. Or the third. Or the fourth. Or the fifth...
     document.body.style.backgroundImage = `url("${extractRootDomain(href)}${prefixes[0]}${theme}.png")`
     document.getElementById("logo").src = extractRootDomain(href) + prefixes[1] + "logo-" + theme + ".png";
+    console.log(`url("${extractRootDomain(href)}${prefixes[2]}nav-${theme}.jpg")`);
+    //foot.style.backgroundImage = `url("${extractRootDomain(href)}${prefixes[2]}nav-${theme}.jpg")`
 }
 
 function pageColors() {
@@ -58,9 +62,13 @@ function pageColors() {
             break;
         case "corruption":
             colorVars = {"page-bg": "#55424B", "selection": "#42363C"};
-            root.style.setProperty('--page-bg', colorVars["page-bg"]);
-            root.style.setProperty('--selection', colorVars["selection"]);
+            break;
+        case "crimson":
+            colorVars = {"page-bg": "#5B3E40", "selection": "#473334"};
+            break;
         default:
             break;
     }
+    root.style.setProperty('--page-bg', colorVars["page-bg"]);
+    root.style.setProperty('--selection', colorVars["selection"]);
 }

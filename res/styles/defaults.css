@@ -3,6 +3,7 @@
     --selection: #4b3932;
     --default-color: #E8E1CF;
     --links: #8DCCDD;
+    --grass-top: url("../img/themes/grass-overworld.webp") top left repeat-x;
 }
 
 #page {

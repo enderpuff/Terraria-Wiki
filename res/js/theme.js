@@ -10,7 +10,6 @@ let pictures = [
     "crimson",
     "hallow",
     "jungle",
-    "snow",
     "underground",
 ];
 
@@ -35,7 +34,7 @@ const prefixes = ["res/img/backgrounds/", "res/img/logos/", "res/img/themes/"];
 let randomNum, theme, foot;
 
 function init() {
-    //foot = document.getElementById("footer");
+    foot = document.getElementById("foot");
     randomNum = Math.floor(Math.random() * pictures.length);
     theme = pictures[randomNum];
 }
@@ -43,10 +42,10 @@ function init() {
 function choosePic () {
     
     //You always miss it the first time, and so I did. But it should work on the second. Or the third. Or the fourth. Or the fifth...
-    document.body.style.backgroundImage = `url("${extractRootDomain(href)}${prefixes[0]}${theme}.png")`
+    document.body.style.backgroundImage = `url("${extractRootDomain(href)}${prefixes[0]}${theme}.png")`;
     document.getElementById("logo").src = extractRootDomain(href) + prefixes[1] + "logo-" + theme + ".png";
     console.log(`url("${extractRootDomain(href)}${prefixes[2]}nav-${theme}.jpg")`);
-    //foot.style.backgroundImage = `url("${extractRootDomain(href)}${prefixes[2]}nav-${theme}.jpg")`
+    foot.style.backgroundImage = `url("${extractRootDomain(href)}${prefixes[2]}nav-${theme}.webp")`;
 }
 
 function pageColors() {
@@ -66,9 +65,19 @@ function pageColors() {
         case "crimson":
             colorVars = {"page-bg": "#5B3E40", "selection": "#473334"};
             break;
+        case "hallow":
+            colorVars = {"page-bg": "#806760", "selection": "#5F4E48"};
+            break;
+        case "jungle":
+            colorVars = {"page-bg": "#4A422D", "selection": "#4B4233"};
+            break
+        case "underground":
+            colorVars = {"page-bg": "#3E393D", "selection": "#383536"};
+            break;
         default:
             break;
     }
     root.style.setProperty('--page-bg', colorVars["page-bg"]);
     root.style.setProperty('--selection', colorVars["selection"]);
+    root.style.setProperty('--grass-top', `url("${extractRootDomain(href)}${prefixes[2]}grass-${theme}.webp") top left repeat-x`)
 }
